@@ -6,7 +6,6 @@ including schematics, layout snapshots, and simulation results.
 ## Included Blocks
 - Single-stage OTA
 - Two-stage Miller OTA
-- Level Shifter
 - Bandgap Reference (BGR)
 - Low-Dropout Regulator (LDO)
 
