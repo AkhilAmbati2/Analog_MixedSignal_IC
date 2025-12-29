@@ -8,6 +8,7 @@ focused on advanced analog IC design methodology and implementation.
 
 ## Key Contributions
 - Python-based design automation and trade-off analysis
+- gm/ID-based transistor sizing methodology
 - Block-level optimization for power, stability, and robustness
 - Cadence Virtuoso schematic, layout, and verification flow
 
