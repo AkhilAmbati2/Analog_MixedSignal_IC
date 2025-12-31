@@ -1,1 +1,44 @@
-
+simulator( 'spectre )
+design(	 "/scratch/ambati/PDKonly/Sim/Akhil_playground/clm_n/maestro/results/maestro/.tmpADEDir_ambati/Akhil_playground_clm_n_1/Akhil_playground_clm_n_schematic_spectre/netlist/netlist")
+resultsDir( "/scratch/ambati/PDKonly/Sim/Akhil_playground/clm_n/maestro/results/maestro/ExplorerRun.0/1/Akhil_playground_clm_n_1" )
+modelFile( 
+    '("/home/vendor/key_foundry/v1.50.2/Models/SPECTRE/corner_HP13M40GEN2.scs" "ttt")
+)
+stimulusFile( ?xlate nil
+    "/home/ambati/unix/user/ambati/work_hp13m40gen2_7M/Akhil_playground/clm_n/save_op.scs"
+)
+analysis('dc ?saveOppoint t  ?param "VGS"  ?start "2"  
+		?stop "5"  ?step "0.01"  )
+desVar(	  "L" 1u	)
+desVar(	  "VDS" 3	)
+desVar(	  "VGS" 2	)
+desVar(	  "W1" 30u	)
+envOption(
+	'analysisOrder  list("pz" "dcmatch" "stb" "tran" "envlp" "ac" "dc" "lf" "noise" "xf" "sp" "pss" "pac" "pstb" "pnoise" "pxf" "psp" "qpss" "qpac" "qpnoise" "qpxf" "qpsp" "hb" "hbac" "hbstb" "hbnoise" "hbxf" "sens" "acmatch") 
+)
+option(	'pzSeverity  "None" 
+	'noiseSeverity  "None" 
+	'spSeverity  "None" 
+	'acSeverity  "None" 
+	'dcOpSeverity  "None" 
+	'dcSeverity  "None" 
+	'tranSeverity  "None" 
+)
+saveOption( ?infoOptions list(list("modelParameter" "models" "rawfile" "" "" "" t) list("element" "inst" "rawfile" "" "" "" t) list("outputParameter" "output" "rawfile" "" "" "" t) list("designParamVals" "parameters" "rawfile" "" "" "" t) list("primitives" "primitives" "rawfile" "" "" "" t) list("subckts" "subckts" "rawfile" "" "" "" t) list("asserts" "assert" "rawfile" "" "" "" nil) list("extremeinfo" "all" "logfile" "" "yes" "" nil) list("allcap" "allcap" "file" "" "" "" nil) list("simStatistics" "simstat" "rawfile" "" "" "" nil) list("<Click_To_Add>" "none" "rawfile" "" "" "" nil) ) )
+temp( 27 ) 
+run()
+gds = getData("NM0.mn:gds" ?result "dc")
+plot( gds ?expr '( "gds" ) )
+id = getData("NM0.mn:id" ?result "dc")
+plot( id ?expr '( "id" ) )
+gds\/id = (gds / id)
+plot( gds\/id ?expr '( "gds/id" ) )
+gds\/id_vs_gm\/id = waveVsWave(?x (gds / id) ?y (gds / id))
+plot( gds\/id_vs_gm\/id ?expr '( "gds/id_vs_gm/id" ) )
+gm = getData("NM0.mn:gm" ?result "dc")
+plot( gm ?expr '( "gm" ) )
+gm\/id = getData("NM0.mn:gmoverid" ?result "dc")
+plot( gm\/id ?expr '( "gm/id" ) )
+region = getData("NM0.mn:region" ?result "dc")
+plot( region ?expr '( "region" ) )
+ocnPrint(?output "/home/ambati/unix/user/ambati/work_hp13m40gen2_7M/Akhil_playground/nmos1.dat" ?numberNotation 'scientific getData("NM0.mn:id"), getData("NM0.mn:gm"), getData("NM0.mn:gds"), getData("NM0.mn:region"), getData("NM0.mn:gmoverid"))
