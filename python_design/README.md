@@ -20,4 +20,9 @@ circuit sizing, analysis, and visualization.
 - Pandas
 - Matplotlib
 
-> Note: Scripts are technology-agnostic and do not include proprietary data.
+Note:
+- Scripts focus on **design methodology**, not foundry-specific implementation
+- Technology parameters are either:
+  - explicitly stated (e.g., square-law models for 130 nm), or
+  - provided via sanitized lookup tables (gm/ID methodology)
+- No proprietary PDK files or confidential data are included
