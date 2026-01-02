@@ -14,7 +14,7 @@ that interface digital logic with analog or multi-voltage domains.
 
 ## Technologies
 - 28 nm FDSOI
-- 18 nm FinFET
+- 14 nm FinFET
 
 ## Tools
 - Cadence Virtuoso
