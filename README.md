@@ -5,7 +5,7 @@ digital, mixed-signal, and analog blocks implemented in advanced CMOS
 technologies.
 
 ## Scope ##
-- Technology nodes: 28 nm FDSOI, 18 nm FinFET
+- Technology nodes: 28 nm FDSOI, 14 nm FinFET
 - Tools: Cadence Virtuoso (schematic & layout), Spectre (simulation)
 - Verification: DRC, LVS, parasitic extraction
 - Design methodology: square-law intuition, gm/ID-based sizing
