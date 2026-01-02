@@ -29,7 +29,7 @@ in advanced technology nodes.
 
 ## Technology Nodes
 - 28 nm FDSOI
-- 18 nm FinFET
+- 14 nm FinFET
 
 
 ## Verification
