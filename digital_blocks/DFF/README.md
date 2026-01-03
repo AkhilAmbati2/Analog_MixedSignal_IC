@@ -104,5 +104,3 @@ to data changes immediately after sampling.
 - This documentation focuses on **design intent and timing methodology**
 
 ---
-
-## Files in This Folder
