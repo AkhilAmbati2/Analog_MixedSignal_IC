@@ -1,6 +1,6 @@
-# CMOS Inverter (14 nm)
+# CMOS Inverter (18 nm)
 
-This block implements a CMOS inverter designed and verified in a 14 nm CMOS technology using Cadence Virtuoso.
+This block implements a CMOS inverter designed and verified in a 18 nm CMOS technology using Cadence Virtuoso.
 
 ## Purpose
 - Fundamental digital logic element
