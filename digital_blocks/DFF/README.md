@@ -1,7 +1,7 @@
-# D Flip-Flop (DFF) — 14 nm CMOS
+# D Flip-Flop (DFF) — 18 nm CMOS
 
 This block implements a **positive-edge-triggered D Flip-Flop (DFF)** designed
-and verified in a **14 nm CMOS technology** using Cadence Virtuoso.
+and verified in a **18 nm CMOS technology** using Cadence Virtuoso.
 
 The DFF is realized using **inverter-based storage nodes** and
 **clock-controlled transmission logic**, and was characterized not only
