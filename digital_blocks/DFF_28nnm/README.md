@@ -29,7 +29,7 @@ The master latch is transparent when `CLK = 1`, while the slave latch is transpa
 The layout was created using **28 nm CMOS design rules**, following standard cell
 layout practices for symmetry, matching, and routability.
 
-![Layout View](DFF_Master_Slave_28nm_Layout.jpg)
+![Layout View](DFF_Master_Slave_28nm_Layout.png)
 
 ---
 
