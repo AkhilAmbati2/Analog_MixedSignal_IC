@@ -1,7 +1,11 @@
 # D Flip-Flop (DFF) — 18 nm CMOS
 
+![Technology](https://img.shields.io/badge/Technology-18nm%20CMOS-blue)
+![Tool](https://img.shields.io/badge/Tool-Cadence%20Virtuoso-green)
+![Type](https://img.shields.io/badge/Type-Positive%20Edge%20Triggered-orange)
+
 This block implements a **positive-edge-triggered D Flip-Flop (DFF)** designed
-and verified in a **18 nm CMOS technology** using Cadence Virtuoso.
+and verified in an **18 nm CMOS technology** using **Cadence Virtuoso**.
 
 The DFF is realized using **inverter-based storage nodes** and
 **clock-controlled transmission logic**, and was characterized not only
@@ -28,13 +32,34 @@ non-transparent operation.
 
 ---
 
+## Design Implementation
+
+### Schematic (Cadence Virtuoso)
+Transistor-level schematic implemented in Cadence Virtuoso using 18 nm CMOS
+devices.
+
+![Schematic View](DFF_Master_Slave_18nm_Schematic.png)
+
+---
+
+### Layout (Cadence Virtuoso)
+Full custom layout created following standard 18 nm design rules and matching
+practices.  
+The focus of this work is **pre-layout timing characterization**.
+
+![Layout View](DFF_Master_Slave_18nm_Layout.png)
+
+---
+
 ## Functional Operation
-The DFF updates its output **Q** only on the rising edge of the clock.
+The DFF updates its output **Q** only on the **rising edge of the clock**.
 Between clock edges, changes at **D** do not propagate to **Q**, confirming
 correct edge-triggered behavior and absence of transparency.
 
 **Reference plot:**
 - `dff_functional_timing.png`
+
+![Functional Timing](dff_functional_timing.png)
 
 ---
 
@@ -44,6 +69,8 @@ Timing behavior was analyzed by **shifting the data (D) arrival time relative
 to the clock edge** and observing the resulting output behavior.
 All timing measurements are referenced to the **50% (400 mV) crossing points**
 of the signals.
+
+---
 
 ### 1. Functional / Safe Operation
 - **D delay:** `td = 17 ns`
@@ -65,6 +92,8 @@ late to be reliably captured.
 **Reference plot:**
 - `dff_setup_time.png`
 
+![Setup Time Waveform](dff_setup_time.png)
+
 ---
 
 ### 3. Hold-Time Stress Condition
@@ -78,14 +107,19 @@ to data changes immediately after sampling.
 **Reference plot:**
 - `dff_hold_time.png`
 
+![Hold Time Waveform](dff_hold_time.png)
+
 ---
 
 ## Measured Timing Metrics (Representative)
-- Clock-to-Q delay: ~90–100 ps
-- Setup-time boundary: ~0 ps margin
-- Hold-time stress demonstrated at ~100 ps after clock edge
 
-(Exact values depend on stimulus and loading conditions.)
+| Metric | Value | Notes |
+|------|------|------|
+| Clock-to-Q delay ($t_{CQ}$) | ~90–100 ps | Rising edge of CLK |
+| Setup-time boundary ($t_{setup}$) | ~0 ps | Boundary condition |
+| Hold-time stress ($t_{hold}$) | ~50–100 ps | Post-clock stability |
+
+(Exact values depend on stimulus, loading, and simulation conditions.)
 
 ---
 
@@ -102,5 +136,3 @@ to data changes immediately after sampling.
 - All figures are **sanitized** and free of proprietary PDK information
 - No schematics, layouts, netlists, or foundry data are included
 - This documentation focuses on **design intent and timing methodology**
-
----
