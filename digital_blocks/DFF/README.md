@@ -38,7 +38,7 @@ non-transparent operation.
 Transistor-level schematic implemented in Cadence Virtuoso using 18 nm CMOS
 devices.
 
-![Schematic View](DFF_Master_Slave_18nm_Schematic.png)
+![Schematic View](D_FlipFlop.png)
 
 ---
 
@@ -47,7 +47,7 @@ Full custom layout created following standard 18 nm design rules and matching
 practices.  
 The focus of this work is **pre-layout timing characterization**.
 
-![Layout View](DFF_Master_Slave_18nm_Layout.png)
+![Layout View](D_FlipFlop_Layout.png)
 
 ---
 
