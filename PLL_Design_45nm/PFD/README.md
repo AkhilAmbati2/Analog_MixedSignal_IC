@@ -24,7 +24,7 @@ The PFD is a digital state machine responsible for comparing the Reference Clock
 | **DIV** | Input | Feedback Clock Input (from Frequency Divider) |
 | **UP** | Output | Charge Pump Control Signal (Active High) |
 | **DOWN** | Output | Charge Pump Control Signal (Active High) |
-| **RST** | Internal | Reset signal for internal latches |
+| **RESET** | Internal | Reset signal for internal latches |
 
 ## Simulation Results
 
