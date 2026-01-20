@@ -1,7 +1,7 @@
 # Phase Frequency Detector (PFD)
 
 ![Technology](https://img.shields.io/badge/Technology-45nm%20CMOS-blue)
-![Type](https://img.shields.io/badge/Architecture-PF%20D-orange)
+![Type](https://img.shields.io/badge/Architecture-PFD-orange)
 ![Design](https://img.shields.io/badge/Design-Phase%20Locked%20Loop-brightgreen)
 
 
