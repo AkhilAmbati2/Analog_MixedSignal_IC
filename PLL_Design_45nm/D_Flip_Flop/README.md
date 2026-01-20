@@ -30,18 +30,18 @@ The topology utilizes a transmission-gate-based master-slave configuration (or s
 ### 2. Propagation Delay ($T_{C-Q}$)
 Measured the delay from the rising edge of the Clock (50%) to the valid transition of the Output Q (50%).
 * **Result:** The intrinsic delay was measured at **60 ps** without load.
-* 
+
 ### 3. Setup Time Characterization
 A **Parametric Sweep** analysis was performed to determine the setup time.
 * **Method:** The Data (`D`) arriving time was swept closer to the Clock (`CLK`) rising edge in **10 ps steps**.
 * **Criterion:** The setup time is defined as the time margin where the Clock-to-Q delay increases by >10% or the output fails to switch.
 * **Result:** Valid data capture was observed down to **50 ps** before the clock edge.
-* **File:** `Transient.png`
+* **File:** ![Schematic View](Transient.png.png)
 
 ### 4. Hold Time Characterization
 Verified the minimum time Data must remain stable after the Clock edge.
 * **Method:** Data transition was swept starting from the Clock edge outwards.
-* **File:** `transient_hold.png`
+
 
 ## Files Included
 * **`schematic.png`**: Transistor-level schematic of the DFF.
