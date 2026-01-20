@@ -9,9 +9,6 @@ including schematics, layout snapshots, and simulation results.
 - Bandgap Reference (BGR)
 - Low-Dropout Regulator (LDO)
 
-## Technologies
-- 28 nm FDSOI
-
 ## Tools
 - Cadence Virtuoso
 - Spectre
