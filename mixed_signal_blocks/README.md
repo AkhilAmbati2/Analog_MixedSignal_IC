@@ -12,9 +12,6 @@ that interface digital logic with analog or multi-voltage domains.
 - Noise margin and hysteresis
 - Device-level robustness
 
-## Technologies
-- 28 nm FDSOI
-- 18 nm FinFET
 
 ## Tools
 - Cadence Virtuoso
