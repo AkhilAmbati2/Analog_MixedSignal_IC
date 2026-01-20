@@ -13,7 +13,7 @@ The Charge Pump acts as the interface between the digital PFD and the analog Loo
 The design follows a modular architecture as described in the reference paper attached below. The schematic is divided into five distinct sub-blocks to ensure precise current mirroring and matching:
 
 1.  **Main Bias Mirror**: 
-    * The core reference block. It takes the input reference current ($I_{in}$) and generates three internal bias currents ($I_{BIASOut1}$, $I_{BIASOut2}$, and $I_{BIASOut3}$) which feed all other blocks[cite: 75].
+    * The core reference block. It takes the input reference current ($I_{in}$) and generates three internal bias currents ($I_{BIASOut1}$, $I_{BIASOut2}$, and $I_{BIASOut3}$) which feed all other blocks.
 2.  **Bias Voltages Circuitry**:
     * Generates the necessary cascode bias voltages ($V_{BiasP}$ and $V_{BiasN}$) for the high-swing output mirrors. 
     * It utilizes $I_{BIASOut1}$ from the Main Bias Mirror to establish stable operating points for the output stage.
@@ -50,8 +50,8 @@ The schematic features a high-swing cascode current mirror structure to maximize
 
 ### 2. Up/Down Current Matching
 Transient simulation was performed to verify the sourcing and sinking capabilities.
-* **UP Pulse:** The CP sources **+30 $\mu$A** when `UP` is high.
-* **DOWN Pulse:** The CP sinks **-30 $\mu$A** when `DOWN` is high.
+* **UP Pulse:** The CP sources **+28 $\mu$A** when `UP` is high.
+* **DOWN Pulse:** The CP sinks **-28 $\mu$A** when `DOWN` is high.
 * **Locked State:** When both signals are active (during the PFD reset pulse), the currents cancel each other out perfectly ($\approx 0 \mu A$), preventing ripple on the control voltage.
 * **File:** ![Schematic View](up_down_matching.png)
 
