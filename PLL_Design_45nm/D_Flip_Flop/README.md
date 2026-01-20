@@ -24,20 +24,19 @@ The design features an **Active High Reset**, optimized for high-speed switching
 
 ### 1. Schematic Design
 The topology utilizes a transmission-gate-based master-slave configuration (or standard CMOS NAND-based topology) to ensure robust logic levels and minimized leakage.
-* **File:** `schematic.png`
+* **File:** ![Schematic View](D_Filp_Flop.png)
 * **Sizing:** Transistors are sized to balance rise/fall times ($W_p \approx 2 \times W_n$) while keeping area minimal.
 
 ### 2. Propagation Delay ($T_{C-Q}$)
 Measured the delay from the rising edge of the Clock (50%) to the valid transition of the Output Q (50%).
 * **Result:** The intrinsic delay was measured at **60 ps** without load.
-* *Note:* Initial simulations with a 10fF load showed ~490ps delay, confirming the need for output buffering when driving long interconnects.
-
+* 
 ### 3. Setup Time Characterization
 A **Parametric Sweep** analysis was performed to determine the setup time.
-* **Method:** The Data (`D`) arriving time was swept closer to the Clock (`CLK`) rising edge in **20 ps steps**.
+* **Method:** The Data (`D`) arriving time was swept closer to the Clock (`CLK`) rising edge in **10 ps steps**.
 * **Criterion:** The setup time is defined as the time margin where the Clock-to-Q delay increases by >10% or the output fails to switch.
 * **Result:** Valid data capture was observed down to **50 ps** before the clock edge.
-* **File:** `transient_setup.png`
+* **File:** `Transient.png`
 
 ### 4. Hold Time Characterization
 Verified the minimum time Data must remain stable after the Clock edge.
@@ -47,6 +46,14 @@ Verified the minimum time Data must remain stable after the Clock edge.
 ## Files Included
 * **`schematic.png`**: Transistor-level schematic of the DFF.
 * **`transient.png`**: Waveforms showing the setup time parametric sweep (Pass/Fail boundary).
+
+## Notes
+- All schematics and layouts are **sanitized**
+- No foundry PDK files, device models, or proprietary data are included
+- Images are provided for **educational and portfolio purposes only**
+- The focus is on **design methodology**, not process-specific optimization
+
+---
 
 ---
 *Part of the 1GHz PLL Design Project.*
