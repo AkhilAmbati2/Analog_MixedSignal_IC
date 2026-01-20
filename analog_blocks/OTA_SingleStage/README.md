@@ -27,7 +27,7 @@ The amplifier converts a **differential input voltage** into a **single-ended ou
 ## Schematic
 
 
-::contentReference[oaicite:0]{index=0}
+![Schematic View](OTA.png)
 
 
 **Key Features**
@@ -41,7 +41,7 @@ The amplifier converts a **differential input voltage** into a **single-ended ou
 ## Physical Layout
 
 
-::contentReference[oaicite:1]{index=1}
+![Schematic View](SingleStageOTA_Layout.png)
 
 
 **Layout Techniques Applied**
