@@ -27,10 +27,6 @@ in advanced technology nodes.
 - Layout-aware design (parasitic-conscious)
 
 
-## Technology Nodes
-- 28 nm FDSOI
-- 18 nm FinFET
-
 
 ## Verification
 - DC transfer characteristics
