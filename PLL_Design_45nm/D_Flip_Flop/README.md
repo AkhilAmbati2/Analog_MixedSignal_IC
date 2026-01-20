@@ -1,8 +1,8 @@
 # D-Flip Flop (DFF) Design in 45nm CMOS
 
 ![Technology](https://img.shields.io/badge/Technology-CMOS-blue)
-![Type](https://img.shields.io/badge/Architecture-Single%20Stage%DFF-orange)
-![Design](https://img.shields.io/badge/Design-Fully%20PLL)
+![Type](https://img.shields.io/badge/Architecture-%DFF-orange)
+![Design](https://img.shields.io/badge/%20PLL)
 
 ## Overview
 This folder contains the schematic design and characterization results of a **D-Flip Flop (DFF)** designed in **45nm CMOS technology**. The flip-flop is a critical building block for the Phase Frequency Detector (PFD) and Frequency Divider in the Phase-Locked Loop (PLL) system.
