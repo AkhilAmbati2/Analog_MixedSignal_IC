@@ -31,7 +31,7 @@ The design consists of a bias circuit (current mirrors), the ring oscillator cor
 * **Ring Core:** 7 cascaded inverter stages. The delay of each stage is controlled by the starvation transistors (Top PMOS / Bottom NMOS).
 * **Output Buffer:** A standard inverter at the end squares the output wave and isolates the oscillator loop from the capacitive load of the Divider.
 
-![VCO Schematic](schematic.png)
+![VCO Schematic](CSVCO.png)
 *Figure 1: Schematic of the 7-Stage Current-Starved VCO with Output Buffer.*
 
 ---
@@ -43,7 +43,7 @@ The transient simulation verifies the oscillation stability and frequency at the
 * **Output (Green):** Stable rail-to-rail oscillation at **1.00 GHz**.
 * **Control Voltage (Pink):** Constant DC input showing the operating point.
 
-![VCO Transient Response](transient.png)
+![VCO Transient Response](CSVCO_transient.png)
 *Figure 2: Transient response showing steady-state 1 GHz oscillation.*
 
 ---
