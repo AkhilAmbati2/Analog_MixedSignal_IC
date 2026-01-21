@@ -20,7 +20,7 @@ The PLL feedback loop operates as follows:
 4.  **VCO:** Adjusts its frequency based on $V_{CTRL}$.
 5.  **Divider:** Divides the VCO frequency by 10 to close the loop.
 
-![Full PLL Schematic](full_schematic.png)
+![Full PLL Schematic](PLL_Final.png)
 *Figure 1: Top-Level Schematic showing the complete feedback loop.*
 
 ---
