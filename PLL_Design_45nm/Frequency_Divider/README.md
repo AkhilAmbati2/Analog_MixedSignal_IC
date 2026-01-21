@@ -35,7 +35,7 @@ The schematic shows the input buffering, the TSPC stage, and the 3-stage ripple 
 * **Middle:** 3 Standard DFFs forming the ripple counter. Note the clocking scheme: $Q_{bar}$ of the previous stage drives $CLK$ of next stage.
 * **Right:** AND Gate Feedback for Modulo-5 Reset.
 
-![Frequency Divider Schematic](schematic.png)
+![Frequency Divider Schematic](Frq_Div.png)
 *Figure 1: Schematic of the Divide-by-10 circuit (TSPC Stage + Modulo-5 Counter).*
 
 ---
@@ -47,7 +47,7 @@ The transient response confirms the correct division at every stage.
 * **Middle Trace (Orange):** Output of TSPC Stage (`F1`). Frequency = **500 MHz**. (Divide-by-2)
 * **Bottom Trace (Yellow):** Internal Counter Bit (`F2`).
 
-![Transient Response](transient.png)
+![Transient Response](Frq_Div_transient.png)
 *Figure 2: Transient simulation showing the stepwise frequency division from 1 GHz (implicit input) to 500 MHz to 100 MHz.*
 
 ---
