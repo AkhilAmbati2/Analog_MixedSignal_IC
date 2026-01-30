@@ -32,7 +32,7 @@ The transient simulation below shows the PLL "waking up" and acquiring lock.
 * **White Trace ($V_{CTRL}$):** Starts at 0V and ramps up as the PFD detects that the VCO is too slow. It settles and flattens out around **490 mV**, indicating the loop is locked.
 * **Blue Trace ($V_{OUT}$):** The VCO output starts oscillating and stabilizes at 1 GHz.
 
-![Lock Process]((PLL_transient_OUT.bmp)
+![Final Output]((PLL_transient_OUT.bmp)
 *Figure 2: Transient response of the Control Voltage (White) stabilizing over time.*
 
 ### **2. Final Output Waveform**
