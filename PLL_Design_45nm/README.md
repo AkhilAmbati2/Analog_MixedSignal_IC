@@ -50,7 +50,7 @@ Zooming in on the stabilized output confirms the frequency accuracy.
 To verify the stability of the clock edges, an Eye Diagram was plotted over a 2ns window (2 Unit Intervals).
 * **Eye Status:** Wide open, indicating strong signal integrity and sufficient drive strength.
 * **Jitter Performance:** The crossing points are sharp with minimal spread.
-* ![Jitter Diagram](Jitter_diagram.png) 
+* ![Jitter Diagram](JITTER_PLL.png) 
 * **RMS Period Jitter:** Calculated as **234.8 fs** (femtoseconds), confirming excellent steady-state stability.
 
 ![Eye Diagram](Eye_Diagram_PLL.bmp) 
