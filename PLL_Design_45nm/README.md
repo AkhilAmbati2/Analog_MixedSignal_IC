@@ -41,10 +41,20 @@ Zooming in on the stabilized output confirms the frequency accuracy.
 * **Error:** $< 0.02\%$.
 * **Waveform:** Clean, rail-to-rail clock signal.
 
-![Final Output](PLL_transient_OUT.png)
+![Final Output](PLL_transient_OUT.bmp)
 *Figure 3: Zoomed-in view of the 1.0 GHz Output Clock after locking.*
 
 ---
+
+### **3. Signal Integrity (Eye Diagram & Jitter)**
+To verify the stability of the clock edges, an Eye Diagram was plotted over a 2ns window (2 Unit Intervals).
+* **Eye Status:** Wide open, indicating strong signal integrity and sufficient drive strength.
+* **Jitter Performance:** The crossing points are sharp with minimal spread.
+* ![Jitter Diagram](Jitter_diagram.png) 
+* **RMS Period Jitter:** Calculated as **234.8 fs** (femtoseconds), confirming excellent steady-state stability.
+
+![Eye Diagram](eye_diagram.bmp) 
+*Figure 4: Eye Diagram showing a stable 1 GHz clock with >90% eye opening.*
 
 ## 📈 Performance Summary
 | Parameter | Target | Simulated Result | Status |
@@ -52,9 +62,9 @@ Zooming in on the stabilized output confirms the frequency accuracy.
 | **Output Frequency** | 1.0 GHz | **999.85 MHz** | ✅ **Pass** |
 | **Reference Frequency** | 100 MHz | 100 MHz | ✅ **Pass** |
 | **Lock Time** | < 1 $\mu$s | **~400 ns** | ✅ **Pass** |
+| **RMS Period Jitter** | < 1 ps | **234.8 fs** | ✅ **Excellent** |
 | **Control Voltage** | - | **488 mV** | ✅ **Centered** |
 | **Power Supply** | 1.0 V | 1.0 V | - |
-
 ---
 ## Notes
 - All schematics and layouts are **sanitized**
