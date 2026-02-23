@@ -59,23 +59,21 @@ Pulse settings:
 ---
 
 ## Results
-![Schematic View](D_Filp_Flop.png)
 ### 1) Schematic
 ![Charge Pump Schematic](Charge_Pump.png)
 
 ### 2) UP-only pulse test (average current extraction)
-![UP-only waveform and scalar current](./images/
-IOUT_UP_avg.png)
+![UP-only waveform and scalar current](IOUT_UP_avg.png)
 
 ### 3) DOWN-only pulse test (average current extraction)
-![DOWN-only waveform and scalar current](./images/IOUT_DOWN_avg.png)
+![DOWN-only waveform and scalar current](IOUT_DOWN_avg.png)
 
 ### 4) Compliance / Current vs Vctrl (VIC sweep)
 UP current vs Vctrl:
-![IUP vs Vctrl](./images/IOUT_UP_avg_VS_VCTRL.png)
+![IUP vs Vctrl](IOUT_UP_avg_VS_VCTRL.png)
 
 DOWN current vs Vctrl:
-![IDOWN vs Vctrl](./images/IOUT_DOWN_avg_VS_VCTRL.png)
+![IDOWN vs Vctrl](IOUT_DOWN_avg_VS_VCTRL.png)
 
 
 ---
