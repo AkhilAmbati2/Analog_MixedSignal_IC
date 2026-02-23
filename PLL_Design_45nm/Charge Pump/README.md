@@ -59,10 +59,9 @@ Pulse settings:
 ---
 
 ## Results
-
+![Schematic View](D_Filp_Flop.png)
 ### 1) Schematic
-![Charge Pump Schematic](./images/
-Charge_Pump.png)
+![Charge Pump Schematic](Charge_Pump.png)
 
 ### 2) UP-only pulse test (average current extraction)
 ![UP-only waveform and scalar current](./images/
